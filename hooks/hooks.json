@@ -1,0 +1,16 @@
+{
+  "description": "Publication inventory, privacy checks and review; requires Claude Code 2.1.295 or later.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Write|Edit|MultiEdit|mcp__.*",
+        "hooks": [{ "type": "command", "command": "node", "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/guard.mjs"], "timeout": 120, "onFailure": "block" }]
+      }
+    ],
+    "UserPromptExpansion": [
+      {
+        "hooks": [{ "type": "command", "command": "node", "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/guard.mjs"], "timeout": 10, "onFailure": "block" }]
+      }
+    ]
+  }
+}

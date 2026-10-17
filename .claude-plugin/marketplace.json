@@ -1,0 +1,13 @@
+{
+  "name": "publish-guard",
+  "owner": { "name": "rePlay, LLC" },
+  "plugins": [
+    {
+      "name": "publish-guard",
+      "source": "./",
+      "description": "Privacy checks and content-bound publication review.",
+      "version": "0.1.0",
+      "author": { "name": "rePlay, LLC" }
+    }
+  ]
+}

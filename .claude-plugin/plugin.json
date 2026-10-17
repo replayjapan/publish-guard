@@ -1,0 +1,7 @@
+{
+  "name": "publish-guard",
+  "version": "0.1.0",
+  "description": "Review publication content and block detected private information on supported Claude Code tool paths.",
+  "author": { "name": "rePlay, LLC" },
+  "license": "MIT"
+}
